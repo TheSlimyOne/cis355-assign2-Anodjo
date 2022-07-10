@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/meta') %>
+<body class="flex flex-column min-vh-100">
+	<%- include('partials/header') %>
+		<div class="container">
+			<div class="row">
+				<form action="/register" method="POST" class="col container right-border" style="padding-top: 20px;">
+					<h1>New User? Create an Account</h1>
+					<p>Choose a unique username</p>
+					<div class="input-group mb-3">
+						<input type="text" name="user_name" class="form-control">
+					</div>
+
+					<p>Enter your name</p>
+					<div class="input-group mb-3">
+						<input type="text" name="name" class="form-control">
+					</div>
+
+					<p>Choose a starting balance</p>
+					<div class="input-group mb-3">
+						<input type="text" name="balance" class="form-control" value="100">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Register</button>
+				</form>
+
+				<form action="/login" method="POST" class="col container left-border" style="padding-left: 60px; padding-top: 20px;">
+					<h1>Log into an Existing Account</h1>
+					<p>Log in as</p>
+					<div class="input-group mb-3">
+						<input type="text" name="user_name" class="form-control">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Log in</button>
+				</form>
+			</div>
+		</div>
+		<%- include('partials/footer') %>
+</body>

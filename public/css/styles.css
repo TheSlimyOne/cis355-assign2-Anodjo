@@ -1,0 +1,48 @@
+body {
+    background-image: url(../images/groot.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-style: italic;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+.right-border {
+    border-right: 2px;
+    border-right-style: solid;
+    border-color: gray;
+
+}
+
+
+.left-border {
+    border-left: 2px;
+    border-left-style: solid;
+    border-color: gray;
+
+}
+
+.card-inherit {
+    background-color: inherit;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.container {
+    margin-bottom: 16px
+}

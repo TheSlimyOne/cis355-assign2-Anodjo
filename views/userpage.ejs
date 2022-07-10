@@ -1,0 +1,27 @@
+<%- include('partials/meta') %>
+
+<body>
+
+    <%- include('partials/header') %>
+    
+    <div class="alert alert-warning text-center">
+        <h1>Hello, <%= locals.user.name %></h1>
+        <a href="/" class="btn btn-danger">Log out</a>
+    </div>
+
+    <div class="mw-100" style="align-items:center; margin-left: 10%; margin-right: 10%;">
+        <%- include('partials/userInfo') %>
+        <%- include('partials/userItems') %>
+        
+        <form action="/buy" method="POST">
+            <input type="text" name="user_name" readonly style="visibility: hidden" value=<%=locals.user.user_name%>>
+            
+            <%- include('partials/cards') %>
+            <br>
+            <button type="submit" style="width: 100%;" class="btn btn-primary">Buy Now</button>
+        </form>
+
+    </div>
+
+    <%- include('partials/footer') %>
+</body>

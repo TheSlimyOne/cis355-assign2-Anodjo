@@ -1,0 +1,58 @@
+<div>
+    <hr style="width:100%;margin:0px"/>
+
+    <h2>At a glance</h2>
+    <hr/>
+
+    <div class="card-group" style="background-color: #cfe3ff;">
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">Name</h2>
+            </div>
+        </div>
+
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">Username</h2>
+            </div>
+        </div>
+
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">Current Balance</h2>
+            </div>
+        </div>
+        
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">Items Owned</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group" style="background-color: #cff4fd;">
+        <div class="card card-inherit" style="border-radius: 0; border: 0px; background-color: #cff4fd;">
+            <div class="card-body">
+                <h2 class="card-title"><%= locals.user.name %></h2>
+            </div>
+        </div>
+
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title"><%= locals.user.user_name %></h2>
+            </div>
+        </div>
+
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">$<%= locals.user.balance %></h2>
+            </div>
+        </div>
+        
+        <div class="card card-inherit" style="border-radius: 0; border: 0px;">
+            <div class="card-body">
+                <h2 class="card-title"><%= locals.user.items.length %></h2>
+            </div>
+        </div>
+    </div>
+</div>
